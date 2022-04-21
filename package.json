@@ -1,0 +1,30 @@
+{
+  "name": "nuestra-boda",
+  "version": "1.0.0",
+  "description": "página web de nuestra boda: Carlos y Pelagia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:css": "npx tailwind build src/assets/css/main.css -c tailwind.config.js -o dist/css/tailwind.css",
+    "build:css": "npx postcss src/assets/css/main.css -o dist/css/tailwind.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://carliros@github.com/carliros/nuestra-boda.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carliros/nuestra-boda/issues"
+  },
+  "homepage": "https://github.com/carliros/nuestra-boda#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
