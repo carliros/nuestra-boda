@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:css": "npx tailwind build src/assets/css/main.css -c tailwind.config.js -o dist/css/tailwind.css",
-    "build:css": "npx postcss src/assets/css/main.css -o dist/css/tailwind.min.css;cp src/index.html dist;cp -r src/assets/images dist/"
+    "build:css": "npx postcss src/assets/css/main.css -o dist/css/tailwind.min.css;cp src/index.html dist;cp -r src/assets/images dist/;cp -r node_modules/tw-elements/dist/js/index.min.js dist/js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,8 @@
   "dependencies": {
     "autoprefixer": "^10.4.4",
     "postcss": "^8.4.12",
-    "postcss-cli": "^9.1.0"
+    "postcss-cli": "^9.1.0",
+    "tw-elements": "^1.0.0-alpha12"
   },
   "devDependencies": {
     "tailwindcss": "^3.0.24"
